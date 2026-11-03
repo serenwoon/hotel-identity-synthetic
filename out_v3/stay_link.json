@@ -1,0 +1,19 @@
+{
+  "seeds": [
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "stays_of_members": 34153,
+  "auto_linked": 19041,
+  "review": 1002,
+  "missed": 14110,
+  "missed_no_clue": 8073,
+  "no_clue": 8152,
+  "in_cluster_with_other_person": 23,
+  "members_with_2plus_stays": 7424,
+  "all_stays_linked": 2084,
+  "no_stay_linked": 1300
+}
