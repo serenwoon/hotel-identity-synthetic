@@ -1,0 +1,2237 @@
+{
+  "ci_less_low": {
+    "11": {
+      "records": 28444,
+      "persons": 20000,
+      "true_pairs": 14295,
+      "judgment_true_pairs": 12380,
+      "ci_record_share": 0.7004289129517649,
+      "method": {
+        "auto_recall": 0.2826862539349423,
+        "judgment_recall": 0.1717285945072698,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 4886,
+        "review_per_1000": 171.77612150189847,
+        "review_same_person_share": 0.9705280392959476,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.661280167890871,
+        "comparisons": 173051,
+        "capped_blocks": 0,
+        "seconds": 2.04
+      },
+      "B1": {
+        "auto_recall": 0.41406086044071355,
+        "judgment_recall": 0.3899030694668821,
+        "false_merge_pairs": 1845,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 387,
+          "인척": 11,
+          "배우자": 1250,
+          "가족(다른 성)": 126,
+          "번호 재할당(타인)": 13,
+          "쌍둥이": 35,
+          "지인 대리예약": 22,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 3020
+      },
+      "B3": {
+        "auto_recall": 0.5901364113326338,
+        "judgment_recall": 0.5630048465266559,
+        "false_merge_pairs": 2366,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 491,
+          "인척": 14,
+          "배우자": 1558,
+          "가족(다른 성)": 170,
+          "번호 재할당(타인)": 24,
+          "지인 대리예약": 58,
+          "쌍둥이": 50,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 3680
+      },
+      "B4": {
+        "auto_recall": 0.639734172787688,
+        "judgment_recall": 0.5840064620355412,
+        "false_merge_pairs": 2460,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 515,
+          "인척": 14,
+          "배우자": 1615,
+          "가족(다른 성)": 181,
+          "번호 재할당(타인)": 24,
+          "지인 대리예약": 58,
+          "쌍둥이": 52,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 3757
+      },
+      "B5": {
+        "auto_recall": 0.6254634487583071,
+        "judgment_recall": 0.5675282714054928,
+        "false_merge_pairs": 555,
+        "false_merge_by_trap": {
+          "배우자": 343,
+          "가족(다른 성)": 46,
+          "지인 대리예약": 58,
+          "가족(같은 성)": 91,
+          "인척": 6,
+          "번호 재할당(타인)": 6,
+          "쌍둥이": 5
+        },
+        "false_merged_records": 931
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "12": {
+      "records": 28638,
+      "persons": 20000,
+      "true_pairs": 14820,
+      "judgment_true_pairs": 12792,
+      "ci_record_share": 0.7000838047349676,
+      "method": {
+        "auto_recall": 0.2855600539811066,
+        "judgment_recall": 0.17229518449030645,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 4942,
+        "review_per_1000": 172.56791675396326,
+        "review_same_person_share": 0.9743019020639417,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6569500674763833,
+        "comparisons": 167220,
+        "capped_blocks": 0,
+        "seconds": 1.98
+      },
+      "B1": {
+        "auto_recall": 0.39433198380566803,
+        "judgment_recall": 0.37062226391494685,
+        "false_merge_pairs": 1834,
+        "false_merge_by_trap": {
+          "배우자": 1247,
+          "가족(같은 성)": 352,
+          "가족(다른 성)": 115,
+          "쌍둥이": 36,
+          "번호 재할당(타인)": 24,
+          "지인 대리예약": 44,
+          "인척": 14,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 2975
+      },
+      "B3": {
+        "auto_recall": 0.5863697705802969,
+        "judgment_recall": 0.558786741713571,
+        "false_merge_pairs": 2367,
+        "false_merge_by_trap": {
+          "배우자": 1576,
+          "가족(같은 성)": 469,
+          "지인 대리예약": 64,
+          "가족(다른 성)": 146,
+          "쌍둥이": 45,
+          "번호 재할당(타인)": 37,
+          "인척": 27,
+          "무관한 사람": 3
+        },
+        "false_merged_records": 3597
+      },
+      "B4": {
+        "auto_recall": 0.6385964912280702,
+        "judgment_recall": 0.5813008130081301,
+        "false_merge_pairs": 2467,
+        "false_merge_by_trap": {
+          "배우자": 1642,
+          "가족(같은 성)": 495,
+          "지인 대리예약": 64,
+          "가족(다른 성)": 148,
+          "쌍둥이": 45,
+          "번호 재할당(타인)": 39,
+          "인척": 31,
+          "무관한 사람": 3
+        },
+        "false_merged_records": 3667
+      },
+      "B5": {
+        "auto_recall": 0.6262483130904184,
+        "judgment_recall": 0.5669949968730457,
+        "false_merge_pairs": 537,
+        "false_merge_by_trap": {
+          "배우자": 329,
+          "지인 대리예약": 64,
+          "가족(같은 성)": 85,
+          "번호 재할당(타인)": 5,
+          "가족(다른 성)": 36,
+          "쌍둥이": 8,
+          "인척": 10
+        },
+        "false_merged_records": 889
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "13": {
+      "records": 28294,
+      "persons": 20000,
+      "true_pairs": 13615,
+      "judgment_true_pairs": 11784,
+      "ci_record_share": 0.7024457482151693,
+      "method": {
+        "auto_recall": 0.2838780756518546,
+        "judgment_recall": 0.17260692464358451,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 4572,
+        "review_per_1000": 161.58902947621405,
+        "review_same_person_share": 0.9728783902012248,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6569225119353654,
+        "comparisons": 165353,
+        "capped_blocks": 0,
+        "seconds": 0.7
+      },
+      "B1": {
+        "auto_recall": 0.391333088505325,
+        "judgment_recall": 0.3671928038017651,
+        "false_merge_pairs": 1849,
+        "false_merge_by_trap": {
+          "배우자": 1317,
+          "가족(같은 성)": 335,
+          "지인 대리예약": 19,
+          "쌍둥이": 47,
+          "가족(다른 성)": 112,
+          "번호 재할당(타인)": 10,
+          "무관한 사람": 3,
+          "인척": 6
+        },
+        "false_merged_records": 3034
+      },
+      "B3": {
+        "auto_recall": 0.582372383400661,
+        "judgment_recall": 0.5553292600135777,
+        "false_merge_pairs": 2409,
+        "false_merge_by_trap": {
+          "배우자": 1683,
+          "지인 대리예약": 44,
+          "가족(같은 성)": 438,
+          "가족(다른 성)": 156,
+          "쌍둥이": 59,
+          "번호 재할당(타인)": 17,
+          "무관한 사람": 3,
+          "인척": 9
+        },
+        "false_merged_records": 3709
+      },
+      "B4": {
+        "auto_recall": 0.6316562614763129,
+        "judgment_recall": 0.5744229463679565,
+        "false_merge_pairs": 2499,
+        "false_merge_by_trap": {
+          "배우자": 1745,
+          "지인 대리예약": 44,
+          "가족(같은 성)": 447,
+          "가족(다른 성)": 170,
+          "쌍둥이": 59,
+          "번호 재할당(타인)": 22,
+          "무관한 사람": 3,
+          "인척": 9
+        },
+        "false_merged_records": 3777
+      },
+      "B5": {
+        "auto_recall": 0.6178479618068307,
+        "judgment_recall": 0.55846911065852,
+        "false_merge_pairs": 519,
+        "false_merge_by_trap": {
+          "배우자": 344,
+          "지인 대리예약": 44,
+          "쌍둥이": 11,
+          "가족(다른 성)": 29,
+          "가족(같은 성)": 77,
+          "번호 재할당(타인)": 11,
+          "무관한 사람": 1,
+          "인척": 2
+        },
+        "false_merged_records": 883
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    }
+  },
+  "ci_less_high": {
+    "11": {
+      "records": 49738,
+      "persons": 20000,
+      "true_pairs": 99651,
+      "judgment_true_pairs": 97401,
+      "ci_record_share": 0.326671760022518,
+      "method": {
+        "auto_recall": 0.16031951510772596,
+        "judgment_recall": 0.14092257779694253,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 35080,
+        "review_per_1000": 705.2957497285778,
+        "review_same_person_share": 0.9793614595210947,
+        "ci_conflict_to_review": 1,
+        "recall_upper_if_human_perfect": 0.6214689265536724,
+        "comparisons": 571820,
+        "capped_blocks": 0,
+        "seconds": 3.82
+      },
+      "B1": {
+        "auto_recall": 0.3451545895174158,
+        "judgment_recall": 0.3399349082658289,
+        "false_merge_pairs": 3917,
+        "false_merge_by_trap": {
+          "배우자": 2588,
+          "가족(같은 성)": 756,
+          "가족(다른 성)": 265,
+          "번호 재할당(타인)": 99,
+          "무관한 사람": 3,
+          "지인 대리예약": 108,
+          "쌍둥이": 68,
+          "인척": 30
+        },
+        "false_merged_records": 4509
+      },
+      "B3": {
+        "auto_recall": 0.5606265867878897,
+        "judgment_recall": 0.5558361823800577,
+        "false_merge_pairs": 6535,
+        "false_merge_by_trap": {
+          "쌍둥이": 128,
+          "배우자": 4238,
+          "가족(다른 성)": 403,
+          "가족(같은 성)": 1198,
+          "지인 대리예약": 304,
+          "번호 재할당(타인)": 198,
+          "무관한 사람": 7,
+          "인척": 59
+        },
+        "false_merged_records": 6630
+      },
+      "B4": {
+        "auto_recall": 0.580064424842701,
+        "judgment_recall": 0.570363753965565,
+        "false_merge_pairs": 6707,
+        "false_merge_by_trap": {
+          "쌍둥이": 148,
+          "배우자": 4328,
+          "가족(다른 성)": 416,
+          "가족(같은 성)": 1231,
+          "지인 대리예약": 308,
+          "번호 재할당(타인)": 209,
+          "무관한 사람": 7,
+          "인척": 60
+        },
+        "false_merged_records": 6726
+      },
+      "B5": {
+        "auto_recall": 0.5708221693711052,
+        "judgment_recall": 0.5609079988911818,
+        "false_merge_pairs": 3767,
+        "false_merge_by_trap": {
+          "가족(다른 성)": 226,
+          "배우자": 2345,
+          "가족(같은 성)": 661,
+          "지인 대리예약": 308,
+          "번호 재할당(타인)": 118,
+          "쌍둥이": 64,
+          "인척": 45
+        },
+        "false_merged_records": 4299
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "12": {
+      "records": 50317,
+      "persons": 20000,
+      "true_pairs": 100737,
+      "judgment_true_pairs": 98448,
+      "ci_record_share": 0.32585408510046304,
+      "method": {
+        "auto_recall": 0.1599908673079405,
+        "judgment_recall": 0.1404599382415082,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 35186,
+        "review_per_1000": 699.2865234413816,
+        "review_same_person_share": 0.9814699028022509,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6194645462938145,
+        "comparisons": 533259,
+        "capped_blocks": 0,
+        "seconds": 2.73
+      },
+      "B1": {
+        "auto_recall": 0.3454639308297845,
+        "judgment_recall": 0.34071794246708925,
+        "false_merge_pairs": 4267,
+        "false_merge_by_trap": {
+          "배우자": 2764,
+          "가족(같은 성)": 876,
+          "지인 대리예약": 151,
+          "가족(다른 성)": 289,
+          "번호 재할당(타인)": 88,
+          "쌍둥이": 56,
+          "인척": 39,
+          "무관한 사람": 4
+        },
+        "false_merged_records": 4678
+      },
+      "B3": {
+        "auto_recall": 0.5600623405501455,
+        "judgment_recall": 0.5554810661465952,
+        "false_merge_pairs": 6945,
+        "false_merge_by_trap": {
+          "배우자": 4344,
+          "가족(같은 성)": 1447,
+          "지인 대리예약": 282,
+          "가족(다른 성)": 499,
+          "번호 재할당(타인)": 209,
+          "쌍둥이": 102,
+          "무관한 사람": 5,
+          "인척": 57
+        },
+        "false_merged_records": 6785
+      },
+      "B4": {
+        "auto_recall": 0.5817524841915086,
+        "judgment_recall": 0.5720278725824801,
+        "false_merge_pairs": 7167,
+        "false_merge_by_trap": {
+          "배우자": 4498,
+          "가족(같은 성)": 1499,
+          "지인 대리예약": 283,
+          "가족(다른 성)": 506,
+          "번호 재할당(타인)": 214,
+          "쌍둥이": 103,
+          "무관한 사람": 5,
+          "인척": 59
+        },
+        "false_merged_records": 6883
+      },
+      "B5": {
+        "auto_recall": 0.5717164497652303,
+        "judgment_recall": 0.5617584917926215,
+        "false_merge_pairs": 3741,
+        "false_merge_by_trap": {
+          "배우자": 2246,
+          "가족(같은 성)": 753,
+          "지인 대리예약": 283,
+          "가족(다른 성)": 263,
+          "쌍둥이": 75,
+          "번호 재할당(타인)": 97,
+          "인척": 24
+        },
+        "false_merged_records": 4284
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "13": {
+      "records": 50272,
+      "persons": 20000,
+      "true_pairs": 100459,
+      "judgment_true_pairs": 98126,
+      "ci_record_share": 0.32765754296626354,
+      "method": {
+        "auto_recall": 0.16371853193840274,
+        "judgment_recall": 0.14383547683590486,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 35341,
+        "review_per_1000": 702.9957033736473,
+        "review_same_person_share": 0.9831923261933732,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6241849908918066,
+        "comparisons": 549148,
+        "capped_blocks": 0,
+        "seconds": 3.0
+      },
+      "B1": {
+        "auto_recall": 0.341472640579739,
+        "judgment_recall": 0.33591504799951083,
+        "false_merge_pairs": 3818,
+        "false_merge_by_trap": {
+          "배우자": 2504,
+          "지인 대리예약": 178,
+          "가족(같은 성)": 655,
+          "번호 재할당(타인)": 44,
+          "쌍둥이": 109,
+          "가족(다른 성)": 296,
+          "인척": 30,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 4566
+      },
+      "B3": {
+        "auto_recall": 0.5615126569048069,
+        "judgment_recall": 0.5567535617471414,
+        "false_merge_pairs": 6417,
+        "false_merge_by_trap": {
+          "번호 재할당(타인)": 99,
+          "가족(다른 성)": 556,
+          "배우자": 4076,
+          "지인 대리예약": 336,
+          "가족(같은 성)": 1079,
+          "쌍둥이": 197,
+          "인척": 58,
+          "무관한 사람": 16
+        },
+        "false_merged_records": 6589
+      },
+      "B4": {
+        "auto_recall": 0.5837107675768224,
+        "judgment_recall": 0.5738132605018038,
+        "false_merge_pairs": 6637,
+        "false_merge_by_trap": {
+          "번호 재할당(타인)": 115,
+          "가족(다른 성)": 583,
+          "배우자": 4224,
+          "지인 대리예약": 342,
+          "가족(같은 성)": 1097,
+          "쌍둥이": 202,
+          "인척": 58,
+          "무관한 사람": 16
+        },
+        "false_merged_records": 6697
+      },
+      "B5": {
+        "auto_recall": 0.573786320787585,
+        "judgment_recall": 0.5636528544932026,
+        "false_merge_pairs": 3565,
+        "false_merge_by_trap": {
+          "번호 재할당(타인)": 53,
+          "가족(다른 성)": 325,
+          "배우자": 2165,
+          "지인 대리예약": 342,
+          "가족(같은 성)": 567,
+          "쌍둥이": 80,
+          "인척": 32,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 4116
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    }
+  },
+  "email_share_low": {
+    "11": {
+      "records": 38520,
+      "persons": 20000,
+      "true_pairs": 45053,
+      "judgment_true_pairs": 41677,
+      "ci_record_share": 0.5152388369678089,
+      "method": {
+        "auto_recall": 0.23095021419217365,
+        "judgment_recall": 0.1686541737649063,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 15641,
+        "review_per_1000": 406.04880581516096,
+        "review_same_person_share": 0.9785179975704879,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6511442079328791,
+        "comparisons": 305539,
+        "capped_blocks": 0,
+        "seconds": 1.28
+      },
+      "B1": {
+        "auto_recall": 0.37460324506692116,
+        "judgment_recall": 0.35931089089905704,
+        "false_merge_pairs": 1332,
+        "false_merge_by_trap": {
+          "배우자": 696,
+          "번호 재할당(타인)": 65,
+          "가족(같은 성)": 285,
+          "지인 대리예약": 84,
+          "인척": 15,
+          "가족(다른 성)": 142,
+          "쌍둥이": 42,
+          "무관한 사람": 3
+        },
+        "false_merged_records": 1926
+      },
+      "B3": {
+        "auto_recall": 0.5771424766386256,
+        "judgment_recall": 0.562564484007966,
+        "false_merge_pairs": 2149,
+        "false_merge_by_trap": {
+          "배우자": 1083,
+          "번호 재할당(타인)": 120,
+          "가족(같은 성)": 437,
+          "쌍둥이": 80,
+          "지인 대리예약": 157,
+          "인척": 23,
+          "가족(다른 성)": 245,
+          "무관한 사람": 4
+        },
+        "false_merged_records": 2868
+      },
+      "B4": {
+        "auto_recall": 0.6207799702572526,
+        "judgment_recall": 0.5900616647071526,
+        "false_merge_pairs": 2241,
+        "false_merge_by_trap": {
+          "배우자": 1109,
+          "번호 재할당(타인)": 150,
+          "가족(같은 성)": 452,
+          "쌍둥이": 90,
+          "지인 대리예약": 159,
+          "인척": 23,
+          "가족(다른 성)": 254,
+          "무관한 사람": 4
+        },
+        "false_merged_records": 2914
+      },
+      "B5": {
+        "auto_recall": 0.6170288327081438,
+        "judgment_recall": 0.5860066703457543,
+        "false_merge_pairs": 1185,
+        "false_merge_by_trap": {
+          "배우자": 623,
+          "번호 재할당(타인)": 44,
+          "가족(같은 성)": 193,
+          "쌍둥이": 41,
+          "지인 대리예약": 159,
+          "인척": 17,
+          "가족(다른 성)": 107,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 1782
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "12": {
+      "records": 38824,
+      "persons": 20000,
+      "true_pairs": 47268,
+      "judgment_true_pairs": 43833,
+      "ci_record_share": 0.5141664949515763,
+      "method": {
+        "auto_recall": 0.22556486417872557,
+        "judgment_recall": 0.1648757785230306,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 16242,
+        "review_per_1000": 418.3494745518236,
+        "review_same_person_share": 0.9818372121659894,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6501227045781501,
+        "comparisons": 312343,
+        "capped_blocks": 0,
+        "seconds": 1.8
+      },
+      "B1": {
+        "auto_recall": 0.37317000930862315,
+        "judgment_recall": 0.35831451189742886,
+        "false_merge_pairs": 1469,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 351,
+          "배우자": 768,
+          "지인 대리예약": 92,
+          "번호 재할당(타인)": 64,
+          "쌍둥이": 49,
+          "가족(다른 성)": 145
+        },
+        "false_merged_records": 2073
+      },
+      "B3": {
+        "auto_recall": 0.5766057374968266,
+        "judgment_recall": 0.5627951543357744,
+        "false_merge_pairs": 2318,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 532,
+          "배우자": 1206,
+          "지인 대리예약": 170,
+          "번호 재할당(타인)": 100,
+          "쌍둥이": 66,
+          "가족(다른 성)": 238,
+          "인척": 6
+        },
+        "false_merged_records": 2952
+      },
+      "B4": {
+        "auto_recall": 0.6208851654396209,
+        "judgment_recall": 0.5911755982935232,
+        "false_merge_pairs": 2403,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 559,
+          "배우자": 1247,
+          "지인 대리예약": 171,
+          "번호 재할당(타인)": 108,
+          "쌍둥이": 68,
+          "가족(다른 성)": 244,
+          "인척": 6
+        },
+        "false_merged_records": 3020
+      },
+      "B5": {
+        "auto_recall": 0.615955826351866,
+        "judgment_recall": 0.5858599685168708,
+        "false_merge_pairs": 1247,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 228,
+          "배우자": 668,
+          "지인 대리예약": 171,
+          "번호 재할당(타인)": 40,
+          "가족(다른 성)": 115,
+          "쌍둥이": 19,
+          "인척": 6
+        },
+        "false_merged_records": 1810
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "13": {
+      "records": 38561,
+      "persons": 20000,
+      "true_pairs": 45522,
+      "judgment_true_pairs": 42086,
+      "ci_record_share": 0.518062290915692,
+      "method": {
+        "auto_recall": 0.22608848468872195,
+        "judgment_recall": 0.16290452882193604,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 15552,
+        "review_per_1000": 403.30904281527967,
+        "review_same_person_share": 0.9778163580246914,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6436008962699354,
+        "comparisons": 340871,
+        "capped_blocks": 0,
+        "seconds": 1.47
+      },
+      "B1": {
+        "auto_recall": 0.3685470761390097,
+        "judgment_recall": 0.35246875445516324,
+        "false_merge_pairs": 1529,
+        "false_merge_by_trap": {
+          "가족(다른 성)": 165,
+          "배우자": 798,
+          "번호 재할당(타인)": 48,
+          "가족(같은 성)": 361,
+          "인척": 20,
+          "쌍둥이": 33,
+          "지인 대리예약": 102,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 2183
+      },
+      "B3": {
+        "auto_recall": 0.5711524098238214,
+        "judgment_recall": 0.554246067575916,
+        "false_merge_pairs": 2398,
+        "false_merge_by_trap": {
+          "가족(다른 성)": 278,
+          "배우자": 1239,
+          "번호 재할당(타인)": 69,
+          "가족(같은 성)": 529,
+          "인척": 37,
+          "쌍둥이": 44,
+          "지인 대리예약": 199,
+          "무관한 사람": 3
+        },
+        "false_merged_records": 3173
+      },
+      "B4": {
+        "auto_recall": 0.6118799701243355,
+        "judgment_recall": 0.5801929382692582,
+        "false_merge_pairs": 2520,
+        "false_merge_by_trap": {
+          "가족(다른 성)": 294,
+          "배우자": 1290,
+          "번호 재할당(타인)": 89,
+          "가족(같은 성)": 556,
+          "인척": 37,
+          "쌍둥이": 48,
+          "지인 대리예약": 203,
+          "무관한 사람": 3
+        },
+        "false_merged_records": 3249
+      },
+      "B5": {
+        "auto_recall": 0.6066736962347876,
+        "judgment_recall": 0.5745616119374614,
+        "false_merge_pairs": 1342,
+        "false_merge_by_trap": {
+          "배우자": 667,
+          "번호 재할당(타인)": 37,
+          "가족(같은 성)": 261,
+          "인척": 35,
+          "가족(다른 성)": 119,
+          "지인 대리예약": 203,
+          "쌍둥이": 20
+        },
+        "false_merged_records": 2000
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    }
+  },
+  "email_share_high": {
+    "11": {
+      "records": 38828,
+      "persons": 20000,
+      "true_pairs": 46033,
+      "judgment_true_pairs": 42613,
+      "ci_record_share": 0.5161738951272278,
+      "method": {
+        "auto_recall": 0.22438250820063868,
+        "judgment_recall": 0.16213362119540986,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 16011,
+        "review_per_1000": 412.35706191408264,
+        "review_same_person_share": 0.9757666604209606,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6468620337583907,
+        "comparisons": 319120,
+        "capped_blocks": 0,
+        "seconds": 1.7
+      },
+      "B1": {
+        "auto_recall": 0.3701257793322182,
+        "judgment_recall": 0.35571304531481,
+        "false_merge_pairs": 4315,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 920,
+          "가족(다른 성)": 380,
+          "배우자": 2747,
+          "쌍둥이": 67,
+          "지인 대리예약": 98,
+          "인척": 51,
+          "번호 재할당(타인)": 47,
+          "무관한 사람": 5
+        },
+        "false_merged_records": 5602
+      },
+      "B3": {
+        "auto_recall": 0.5785632046575283,
+        "judgment_recall": 0.5639828221434774,
+        "false_merge_pairs": 6370,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 1360,
+          "가족(다른 성)": 544,
+          "배우자": 4024,
+          "쌍둥이": 104,
+          "지인 대리예약": 179,
+          "인척": 75,
+          "번호 재할당(타인)": 79,
+          "무관한 사람": 5
+        },
+        "false_merged_records": 7262
+      },
+      "B4": {
+        "auto_recall": 0.6194686420611301,
+        "judgment_recall": 0.5889282613287025,
+        "false_merge_pairs": 6742,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 1407,
+          "가족(다른 성)": 576,
+          "배우자": 4265,
+          "쌍둥이": 138,
+          "지인 대리예약": 182,
+          "인척": 80,
+          "번호 재할당(타인)": 87,
+          "무관한 사람": 7
+        },
+        "false_merged_records": 7447
+      },
+      "B5": {
+        "auto_recall": 0.5989181674016466,
+        "judgment_recall": 0.5667284631450497,
+        "false_merge_pairs": 2110,
+        "false_merge_by_trap": {
+          "배우자": 1343,
+          "가족(다른 성)": 130,
+          "지인 대리예약": 182,
+          "가족(같은 성)": 379,
+          "인척": 14,
+          "쌍둥이": 30,
+          "번호 재할당(타인)": 32
+        },
+        "false_merged_records": 2713
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "12": {
+      "records": 38608,
+      "persons": 20000,
+      "true_pairs": 45642,
+      "judgment_true_pairs": 42326,
+      "ci_record_share": 0.5154631164525487,
+      "method": {
+        "auto_recall": 0.21988519346216204,
+        "judgment_recall": 0.15876766053962105,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 15680,
+        "review_per_1000": 406.1334438458351,
+        "review_same_person_share": 0.9787627551020408,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6437710880329521,
+        "comparisons": 310697,
+        "capped_blocks": 0,
+        "seconds": 1.61
+      },
+      "B1": {
+        "auto_recall": 0.36164059418956224,
+        "judgment_recall": 0.3475168926900723,
+        "false_merge_pairs": 4170,
+        "false_merge_by_trap": {
+          "배우자": 2513,
+          "가족(같은 성)": 1020,
+          "지인 대리예약": 95,
+          "무관한 사람": 14,
+          "번호 재할당(타인)": 41,
+          "쌍둥이": 92,
+          "가족(다른 성)": 361,
+          "인척": 34
+        },
+        "false_merged_records": 5577
+      },
+      "B3": {
+        "auto_recall": 0.5719512729503528,
+        "judgment_recall": 0.5571988848461938,
+        "false_merge_pairs": 6209,
+        "false_merge_by_trap": {
+          "배우자": 3697,
+          "가족(같은 성)": 1481,
+          "지인 대리예약": 175,
+          "무관한 사람": 19,
+          "번호 재할당(타인)": 99,
+          "쌍둥이": 143,
+          "가족(다른 성)": 529,
+          "인척": 66
+        },
+        "false_merged_records": 7214
+      },
+      "B4": {
+        "auto_recall": 0.6132290434249157,
+        "judgment_recall": 0.5829277512639985,
+        "false_merge_pairs": 6524,
+        "false_merge_by_trap": {
+          "배우자": 3840,
+          "가족(같은 성)": 1604,
+          "지인 대리예약": 179,
+          "무관한 사람": 19,
+          "번호 재할당(타인)": 111,
+          "쌍둥이": 160,
+          "가족(다른 성)": 544,
+          "인척": 67
+        },
+        "false_merged_records": 7398
+      },
+      "B5": {
+        "auto_recall": 0.5951535866088252,
+        "judgment_recall": 0.5634361857959647,
+        "false_merge_pairs": 1820,
+        "false_merge_by_trap": {
+          "배우자": 1023,
+          "가족(같은 성)": 396,
+          "지인 대리예약": 179,
+          "번호 재할당(타인)": 43,
+          "쌍둥이": 34,
+          "가족(다른 성)": 126,
+          "인척": 19
+        },
+        "false_merged_records": 2536
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "13": {
+      "records": 38314,
+      "persons": 20000,
+      "true_pairs": 44941,
+      "judgment_true_pairs": 41513,
+      "ci_record_share": 0.5199926919663831,
+      "method": {
+        "auto_recall": 0.22567366102222913,
+        "judgment_recall": 0.16173246934695157,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 15549,
+        "review_per_1000": 405.8307668215274,
+        "review_same_person_share": 0.9809634060068172,
+        "ci_conflict_to_review": 1,
+        "recall_upper_if_human_perfect": 0.645735519903874,
+        "comparisons": 305733,
+        "capped_blocks": 0,
+        "seconds": 1.51
+      },
+      "B1": {
+        "auto_recall": 0.3607841392047351,
+        "judgment_recall": 0.3463493363524679,
+        "false_merge_pairs": 4119,
+        "false_merge_by_trap": {
+          "배우자": 2507,
+          "가족(같은 성)": 895,
+          "가족(다른 성)": 406,
+          "인척": 46,
+          "번호 재할당(타인)": 81,
+          "쌍둥이": 104,
+          "지인 대리예약": 61,
+          "무관한 사람": 19
+        },
+        "false_merged_records": 5401
+      },
+      "B3": {
+        "auto_recall": 0.57895907968225,
+        "judgment_recall": 0.5655818659215186,
+        "false_merge_pairs": 6084,
+        "false_merge_by_trap": {
+          "배우자": 3724,
+          "쌍둥이": 142,
+          "가족(같은 성)": 1213,
+          "가족(다른 성)": 603,
+          "번호 재할당(타인)": 182,
+          "인척": 74,
+          "무관한 사람": 24,
+          "지인 대리예약": 122
+        },
+        "false_merged_records": 7075
+      },
+      "B4": {
+        "auto_recall": 0.6248414588015399,
+        "judgment_recall": 0.5938621636595766,
+        "false_merge_pairs": 6425,
+        "false_merge_by_trap": {
+          "배우자": 3933,
+          "쌍둥이": 151,
+          "가족(같은 성)": 1288,
+          "가족(다른 성)": 635,
+          "번호 재할당(타인)": 190,
+          "인척": 76,
+          "무관한 사람": 26,
+          "지인 대리예약": 126
+        },
+        "false_merged_records": 7288
+      },
+      "B5": {
+        "auto_recall": 0.6060390289490666,
+        "judgment_recall": 0.5735070941632742,
+        "false_merge_pairs": 1888,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 329,
+          "배우자": 1166,
+          "번호 재할당(타인)": 48,
+          "인척": 17,
+          "가족(다른 성)": 178,
+          "지인 대리예약": 126,
+          "쌍둥이": 24
+        },
+        "false_merged_records": 2540
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    }
+  },
+  "phone_change_low": {
+    "11": {
+      "records": 38431,
+      "persons": 20000,
+      "true_pairs": 45350,
+      "judgment_true_pairs": 42042,
+      "ci_record_share": 0.5171346048762717,
+      "method": {
+        "auto_recall": 0.24392502756339582,
+        "judgment_recall": 0.18443461300604158,
+        "false_merge_pairs": 1,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 1
+        },
+        "false_merged_records": 2,
+        "review_pairs": 17208,
+        "review_per_1000": 447.76352423824517,
+        "review_same_person_share": 0.979834960483496,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6802425578831311,
+        "comparisons": 316378,
+        "capped_blocks": 0,
+        "seconds": 1.65
+      },
+      "B1": {
+        "auto_recall": 0.4105843439911797,
+        "judgment_recall": 0.3956281813424671,
+        "false_merge_pairs": 3042,
+        "false_merge_by_trap": {
+          "배우자": 2048,
+          "쌍둥이": 41,
+          "가족(같은 성)": 566,
+          "가족(다른 성)": 277,
+          "지인 대리예약": 83,
+          "번호 재할당(타인)": 13,
+          "인척": 14
+        },
+        "false_merged_records": 3885
+      },
+      "B3": {
+        "auto_recall": 0.6373759647188534,
+        "judgment_recall": 0.622306265163408,
+        "false_merge_pairs": 4580,
+        "false_merge_by_trap": {
+          "배우자": 3021,
+          "쌍둥이": 65,
+          "가족(같은 성)": 856,
+          "가족(다른 성)": 435,
+          "지인 대리예약": 147,
+          "번호 재할당(타인)": 22,
+          "인척": 34
+        },
+        "false_merged_records": 5214
+      },
+      "B4": {
+        "auto_recall": 0.6654685777287762,
+        "judgment_recall": 0.6391465677179963,
+        "false_merge_pairs": 4777,
+        "false_merge_by_trap": {
+          "배우자": 3118,
+          "쌍둥이": 66,
+          "가족(같은 성)": 882,
+          "가족(다른 성)": 455,
+          "지인 대리예약": 147,
+          "번호 재할당(타인)": 55,
+          "인척": 36,
+          "무관한 사람": 18
+        },
+        "false_merged_records": 5296
+      },
+      "B5": {
+        "auto_recall": 0.6528996692392502,
+        "judgment_recall": 0.6255886970172685,
+        "false_merge_pairs": 1708,
+        "false_merge_by_trap": {
+          "쌍둥이": 12,
+          "가족(같은 성)": 254,
+          "배우자": 1061,
+          "가족(다른 성)": 151,
+          "지인 대리예약": 147,
+          "번호 재할당(타인)": 42,
+          "인척": 26,
+          "무관한 사람": 15
+        },
+        "false_merged_records": 2284
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "12": {
+      "records": 39075,
+      "persons": 20000,
+      "true_pairs": 47724,
+      "judgment_true_pairs": 44130,
+      "ci_record_share": 0.5137811900191939,
+      "method": {
+        "auto_recall": 0.24803034112815356,
+        "judgment_recall": 0.18678903240426015,
+        "false_merge_pairs": 1,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 1
+        },
+        "false_merged_records": 2,
+        "review_pairs": 18111,
+        "review_per_1000": 463.4932821497121,
+        "review_same_person_share": 0.9801777925017945,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6803704634984494,
+        "comparisons": 314112,
+        "capped_blocks": 0,
+        "seconds": 1.53
+      },
+      "B1": {
+        "auto_recall": 0.405163020702372,
+        "judgment_recall": 0.38914570586902336,
+        "false_merge_pairs": 3016,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 621,
+          "배우자": 1977,
+          "가족(다른 성)": 215,
+          "지인 대리예약": 97,
+          "인척": 35,
+          "쌍둥이": 64,
+          "번호 재할당(타인)": 6,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 4045
+      },
+      "B3": {
+        "auto_recall": 0.6287821641103009,
+        "judgment_recall": 0.6130296850215273,
+        "false_merge_pairs": 4589,
+        "false_merge_by_trap": {
+          "배우자": 2884,
+          "가족(같은 성)": 971,
+          "가족(다른 성)": 378,
+          "지인 대리예약": 160,
+          "인척": 68,
+          "쌍둥이": 118,
+          "번호 재할당(타인)": 9,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 5443
+      },
+      "B4": {
+        "auto_recall": 0.6598357220685609,
+        "judgment_recall": 0.6321323362791752,
+        "false_merge_pairs": 4706,
+        "false_merge_by_trap": {
+          "배우자": 2942,
+          "가족(같은 성)": 996,
+          "가족(다른 성)": 400,
+          "지인 대리예약": 160,
+          "인척": 70,
+          "쌍둥이": 127,
+          "번호 재할당(타인)": 10,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 5515
+      },
+      "B5": {
+        "auto_recall": 0.649128321180119,
+        "judgment_recall": 0.6205529118513483,
+        "false_merge_pairs": 1700,
+        "false_merge_by_trap": {
+          "배우자": 1005,
+          "가족(같은 성)": 332,
+          "지인 대리예약": 160,
+          "인척": 47,
+          "가족(다른 성)": 120,
+          "쌍둥이": 34,
+          "번호 재할당(타인)": 2
+        },
+        "false_merged_records": 2412
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "13": {
+      "records": 38265,
+      "persons": 20000,
+      "true_pairs": 44458,
+      "judgment_true_pairs": 41243,
+      "ci_record_share": 0.5174180060107147,
+      "method": {
+        "auto_recall": 0.24308335957532953,
+        "judgment_recall": 0.18407972261959604,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 16937,
+        "review_per_1000": 442.62380765712794,
+        "review_same_person_share": 0.9813426226604476,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6782356381303702,
+        "comparisons": 309932,
+        "capped_blocks": 0,
+        "seconds": 1.58
+      },
+      "B1": {
+        "auto_recall": 0.40813801790453913,
+        "judgment_recall": 0.39107242441141526,
+        "false_merge_pairs": 3094,
+        "false_merge_by_trap": {
+          "지인 대리예약": 78,
+          "배우자": 2094,
+          "가족(다른 성)": 228,
+          "가족(같은 성)": 604,
+          "쌍둥이": 57,
+          "인척": 19,
+          "번호 재할당(타인)": 14
+        },
+        "false_merged_records": 4045
+      },
+      "B3": {
+        "auto_recall": 0.6367133024427549,
+        "judgment_recall": 0.6193293407366098,
+        "false_merge_pairs": 4680,
+        "false_merge_by_trap": {
+          "지인 대리예약": 149,
+          "가족(같은 성)": 953,
+          "배우자": 3078,
+          "인척": 30,
+          "가족(다른 성)": 351,
+          "쌍둥이": 73,
+          "무관한 사람": 4,
+          "번호 재할당(타인)": 42
+        },
+        "false_merged_records": 5453
+      },
+      "B4": {
+        "auto_recall": 0.661365783436052,
+        "judgment_recall": 0.6349683582668574,
+        "false_merge_pairs": 4800,
+        "false_merge_by_trap": {
+          "지인 대리예약": 150,
+          "가족(같은 성)": 969,
+          "배우자": 3170,
+          "인척": 30,
+          "가족(다른 성)": 355,
+          "쌍둥이": 77,
+          "무관한 사람": 4,
+          "번호 재할당(타인)": 45
+        },
+        "false_merged_records": 5513
+      },
+      "B5": {
+        "auto_recall": 0.6489270772414414,
+        "judgment_recall": 0.6215600223068157,
+        "false_merge_pairs": 1654,
+        "false_merge_by_trap": {
+          "지인 대리예약": 150,
+          "가족(같은 성)": 294,
+          "인척": 20,
+          "배우자": 1024,
+          "가족(다른 성)": 127,
+          "쌍둥이": 23,
+          "번호 재할당(타인)": 16
+        },
+        "false_merged_records": 2307
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    }
+  },
+  "phone_change_high": {
+    "11": {
+      "records": 38431,
+      "persons": 20000,
+      "true_pairs": 45350,
+      "judgment_true_pairs": 42041,
+      "ci_record_share": 0.5171606255366761,
+      "method": {
+        "auto_recall": 0.20381477398015435,
+        "judgment_recall": 0.1411479270236198,
+        "false_merge_pairs": 1,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 1
+        },
+        "false_merged_records": 2,
+        "review_pairs": 14316,
+        "review_per_1000": 372.511774348833,
+        "review_same_person_share": 0.9795333892148644,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6263947078280044,
+        "comparisons": 315492,
+        "capped_blocks": 0,
+        "seconds": 1.5
+      },
+      "B1": {
+        "auto_recall": 0.3402205071664829,
+        "judgment_recall": 0.328584001332033,
+        "false_merge_pairs": 2763,
+        "false_merge_by_trap": {
+          "배우자": 1783,
+          "쌍둥이": 35,
+          "가족(같은 성)": 499,
+          "가족(다른 성)": 251,
+          "번호 재할당(타인)": 105,
+          "지인 대리예약": 77,
+          "인척": 11,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 3680
+      },
+      "B3": {
+        "auto_recall": 0.5362513781697905,
+        "judgment_recall": 0.5248447943674033,
+        "false_merge_pairs": 4095,
+        "false_merge_by_trap": {
+          "배우자": 2574,
+          "쌍둥이": 54,
+          "가족(같은 성)": 692,
+          "가족(다른 성)": 394,
+          "번호 재할당(타인)": 213,
+          "지인 대리예약": 131,
+          "무관한 사람": 12,
+          "인척": 25
+        },
+        "false_merged_records": 4828
+      },
+      "B4": {
+        "auto_recall": 0.5931201764057332,
+        "judgment_recall": 0.5610951214290811,
+        "false_merge_pairs": 4467,
+        "false_merge_by_trap": {
+          "배우자": 2768,
+          "쌍둥이": 59,
+          "가족(같은 성)": 759,
+          "가족(다른 성)": 421,
+          "번호 재할당(타인)": 265,
+          "지인 대리예약": 134,
+          "무관한 사람": 32,
+          "인척": 29
+        },
+        "false_merged_records": 5014
+      },
+      "B5": {
+        "auto_recall": 0.5799558985667034,
+        "judgment_recall": 0.5468946980328727,
+        "false_merge_pairs": 1668,
+        "false_merge_by_trap": {
+          "쌍둥이": 6,
+          "가족(같은 성)": 227,
+          "배우자": 1028,
+          "번호 재할당(타인)": 98,
+          "가족(다른 성)": 145,
+          "지인 대리예약": 134,
+          "인척": 21,
+          "무관한 사람": 9
+        },
+        "false_merged_records": 2160
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "12": {
+      "records": 38922,
+      "persons": 20000,
+      "true_pairs": 47536,
+      "judgment_true_pairs": 44040,
+      "ci_record_share": 0.5131031293355942,
+      "method": {
+        "auto_recall": 0.205549478290138,
+        "judgment_recall": 0.14248410535876477,
+        "false_merge_pairs": 1,
+        "false_merge_by_trap": {
+          "배우자": 1
+        },
+        "false_merged_records": 2,
+        "review_pairs": 15097,
+        "review_per_1000": 387.8783207440522,
+        "review_same_person_share": 0.9767503477512088,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6296070346684618,
+        "comparisons": 323806,
+        "capped_blocks": 0,
+        "seconds": 1.34
+      },
+      "B1": {
+        "auto_recall": 0.33707085156512956,
+        "judgment_recall": 0.3237511353315168,
+        "false_merge_pairs": 2673,
+        "false_merge_by_trap": {
+          "배우자": 1720,
+          "가족(같은 성)": 554,
+          "인척": 26,
+          "번호 재할당(타인)": 81,
+          "가족(다른 성)": 179,
+          "지인 대리예약": 59,
+          "쌍둥이": 51,
+          "무관한 사람": 3
+        },
+        "false_merged_records": 3774
+      },
+      "B3": {
+        "auto_recall": 0.5351733423089868,
+        "judgment_recall": 0.5217529518619437,
+        "false_merge_pairs": 3931,
+        "false_merge_by_trap": {
+          "배우자": 2404,
+          "가족(같은 성)": 828,
+          "가족(다른 성)": 251,
+          "인척": 45,
+          "번호 재할당(타인)": 174,
+          "쌍둥이": 77,
+          "지인 대리예약": 144,
+          "무관한 사람": 8
+        },
+        "false_merged_records": 4962
+      },
+      "B4": {
+        "auto_recall": 0.5907312352743184,
+        "judgment_recall": 0.5582425068119891,
+        "false_merge_pairs": 4215,
+        "false_merge_by_trap": {
+          "배우자": 2536,
+          "가족(같은 성)": 903,
+          "가족(다른 성)": 276,
+          "인척": 51,
+          "번호 재할당(타인)": 186,
+          "쌍둥이": 104,
+          "지인 대리예약": 149,
+          "무관한 사람": 10
+        },
+        "false_merged_records": 5122
+      },
+      "B5": {
+        "auto_recall": 0.5804863682261865,
+        "judgment_recall": 0.5471843778383287,
+        "false_merge_pairs": 1560,
+        "false_merge_by_trap": {
+          "배우자": 865,
+          "가족(다른 성)": 110,
+          "가족(같은 성)": 288,
+          "인척": 28,
+          "번호 재할당(타인)": 82,
+          "쌍둥이": 38,
+          "지인 대리예약": 149
+        },
+        "false_merged_records": 2161
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "13": {
+      "records": 38269,
+      "persons": 20000,
+      "true_pairs": 44616,
+      "judgment_true_pairs": 41348,
+      "ci_record_share": 0.5177036243434634,
+      "method": {
+        "auto_recall": 0.20483682983682983,
+        "judgment_recall": 0.1419899390538841,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 14050,
+        "review_per_1000": 367.13789228879773,
+        "review_same_person_share": 0.9816370106761566,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6257172314864623,
+        "comparisons": 312756,
+        "capped_blocks": 0,
+        "seconds": 1.48
+      },
+      "B1": {
+        "auto_recall": 0.3325712748789672,
+        "judgment_recall": 0.31943503917964594,
+        "false_merge_pairs": 2686,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 500,
+          "배우자": 1760,
+          "가족(다른 성)": 245,
+          "쌍둥이": 52,
+          "지인 대리예약": 64,
+          "번호 재할당(타인)": 48,
+          "인척": 11,
+          "무관한 사람": 6
+        },
+        "false_merged_records": 3749
+      },
+      "B3": {
+        "auto_recall": 0.5303702707548862,
+        "judgment_recall": 0.5169294766373222,
+        "false_merge_pairs": 3936,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 752,
+          "지인 대리예약": 127,
+          "배우자": 2517,
+          "가족(다른 성)": 354,
+          "쌍둥이": 70,
+          "번호 재할당(타인)": 81,
+          "인척": 22,
+          "무관한 사람": 13
+        },
+        "false_merged_records": 4928
+      },
+      "B4": {
+        "auto_recall": 0.5848574502420656,
+        "judgment_recall": 0.5520460481764535,
+        "false_merge_pairs": 4254,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 834,
+          "지인 대리예약": 128,
+          "배우자": 2720,
+          "가족(다른 성)": 368,
+          "쌍둥이": 75,
+          "번호 재할당(타인)": 94,
+          "인척": 22,
+          "무관한 사람": 13
+        },
+        "false_merged_records": 5120
+      },
+      "B5": {
+        "auto_recall": 0.5726421014882553,
+        "judgment_recall": 0.5388652413659669,
+        "false_merge_pairs": 1534,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 280,
+          "지인 대리예약": 128,
+          "배우자": 895,
+          "쌍둥이": 21,
+          "가족(다른 성)": 169,
+          "인척": 9,
+          "번호 재할당(타인)": 31,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 2098
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    }
+  },
+  "typo_stress": {
+    "11": {
+      "records": 38331,
+      "persons": 20000,
+      "true_pairs": 45328,
+      "judgment_true_pairs": 42077,
+      "ci_record_share": 0.5181184941692103,
+      "method": {
+        "auto_recall": 0.172321743734557,
+        "judgment_recall": 0.108372745205219,
+        "false_merge_pairs": 1,
+        "false_merge_by_trap": {
+          "쌍둥이": 1
+        },
+        "false_merged_records": 2,
+        "review_pairs": 14113,
+        "review_per_1000": 368.18762881218856,
+        "review_same_person_share": 0.9819315524693545,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.5745896576067773,
+        "comparisons": 265918,
+        "capped_blocks": 0,
+        "seconds": 1.35
+      },
+      "B1": {
+        "auto_recall": 0.3069405224144017,
+        "judgment_recall": 0.2932480927822801,
+        "false_merge_pairs": 2113,
+        "false_merge_by_trap": {
+          "배우자": 1403,
+          "가족(같은 성)": 380,
+          "가족(다른 성)": 176,
+          "인척": 8,
+          "쌍둥이": 53,
+          "지인 대리예약": 57,
+          "번호 재할당(타인)": 34,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 3044
+      },
+      "B3": {
+        "auto_recall": 0.49148429226967877,
+        "judgment_recall": 0.47769565320721535,
+        "false_merge_pairs": 3107,
+        "false_merge_by_trap": {
+          "배우자": 2031,
+          "가족(같은 성)": 546,
+          "가족(다른 성)": 260,
+          "인척": 13,
+          "쌍둥이": 72,
+          "지인 대리예약": 136,
+          "번호 재할당(타인)": 47,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 4122
+      },
+      "B4": {
+        "auto_recall": 0.5436816096011295,
+        "judgment_recall": 0.5084250303015899,
+        "false_merge_pairs": 3374,
+        "false_merge_by_trap": {
+          "배우자": 2182,
+          "가족(같은 성)": 592,
+          "가족(다른 성)": 282,
+          "인척": 18,
+          "쌍둥이": 73,
+          "지인 대리예약": 139,
+          "번호 재할당(타인)": 86,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 4282
+      },
+      "B5": {
+        "auto_recall": 0.536467525591246,
+        "judgment_recall": 0.5006535637046368,
+        "false_merge_pairs": 1260,
+        "false_merge_by_trap": {
+          "배우자": 800,
+          "가족(다른 성)": 90,
+          "가족(같은 성)": 177,
+          "인척": 9,
+          "쌍둥이": 26,
+          "지인 대리예약": 139,
+          "번호 재할당(타인)": 19
+        },
+        "false_merged_records": 1865
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "12": {
+      "records": 38949,
+      "persons": 20000,
+      "true_pairs": 46498,
+      "judgment_true_pairs": 43004,
+      "ci_record_share": 0.5160337877737554,
+      "method": {
+        "auto_recall": 0.17508279926018325,
+        "judgment_recall": 0.10805971537531392,
+        "false_merge_pairs": 2,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 2
+        },
+        "false_merged_records": 3,
+        "review_pairs": 14067,
+        "review_per_1000": 361.16459986135715,
+        "review_same_person_share": 0.981659202388569,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.5704761495118069,
+        "comparisons": 277704,
+        "capped_blocks": 0,
+        "seconds": 1.43
+      },
+      "B1": {
+        "auto_recall": 0.3045507333648759,
+        "judgment_recall": 0.2896242210026974,
+        "false_merge_pairs": 2229,
+        "false_merge_by_trap": {
+          "배우자": 1501,
+          "가족(다른 성)": 127,
+          "가족(같은 성)": 456,
+          "인척": 12,
+          "쌍둥이": 43,
+          "지인 대리예약": 57,
+          "번호 재할당(타인)": 31,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 3205
+      },
+      "B3": {
+        "auto_recall": 0.4853542087831735,
+        "judgment_recall": 0.47025858059715375,
+        "false_merge_pairs": 3369,
+        "false_merge_by_trap": {
+          "배우자": 2178,
+          "가족(다른 성)": 200,
+          "가족(같은 성)": 734,
+          "인척": 19,
+          "쌍둥이": 63,
+          "지인 대리예약": 125,
+          "무관한 사람": 5,
+          "번호 재할당(타인)": 45
+        },
+        "false_merged_records": 4326
+      },
+      "B4": {
+        "auto_recall": 0.5415286678996946,
+        "judgment_recall": 0.504278671751465,
+        "false_merge_pairs": 3661,
+        "false_merge_by_trap": {
+          "배우자": 2354,
+          "가족(다른 성)": 222,
+          "가족(같은 성)": 790,
+          "인척": 21,
+          "쌍둥이": 67,
+          "지인 대리예약": 126,
+          "무관한 사람": 5,
+          "번호 재할당(타인)": 76
+        },
+        "false_merged_records": 4487
+      },
+      "B5": {
+        "auto_recall": 0.5318723385952084,
+        "judgment_recall": 0.4938377825318575,
+        "false_merge_pairs": 1290,
+        "false_merge_by_trap": {
+          "배우자": 765,
+          "가족(다른 성)": 72,
+          "가족(같은 성)": 271,
+          "지인 대리예약": 126,
+          "쌍둥이": 27,
+          "인척": 7,
+          "번호 재할당(타인)": 22
+        },
+        "false_merged_records": 1893
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "13": {
+      "records": 38360,
+      "persons": 20000,
+      "true_pairs": 44267,
+      "judgment_true_pairs": 40891,
+      "ci_record_share": 0.5180135557872784,
+      "method": {
+        "auto_recall": 0.17857546253416767,
+        "judgment_recall": 0.11075786847961654,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 13635,
+        "review_per_1000": 355.44838373305527,
+        "review_same_person_share": 0.9813714704803814,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.5717803329794203,
+        "comparisons": 259992,
+        "capped_blocks": 0,
+        "seconds": 1.46
+      },
+      "B1": {
+        "auto_recall": 0.30363476178643234,
+        "judgment_recall": 0.28979482037612186,
+        "false_merge_pairs": 2317,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 456,
+          "배우자": 1556,
+          "가족(다른 성)": 148,
+          "인척": 27,
+          "쌍둥이": 35,
+          "지인 대리예약": 56,
+          "번호 재할당(타인)": 38,
+          "무관한 사람": 1
+        },
+        "false_merged_records": 3251
+      },
+      "B3": {
+        "auto_recall": 0.4877900015813134,
+        "judgment_recall": 0.473086987356631,
+        "false_merge_pairs": 3512,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 735,
+          "배우자": 2277,
+          "가족(다른 성)": 196,
+          "인척": 41,
+          "쌍둥이": 47,
+          "지인 대리예약": 132,
+          "번호 재할당(타인)": 81,
+          "무관한 사람": 3
+        },
+        "false_merged_records": 4385
+      },
+      "B4": {
+        "auto_recall": 0.542548625386857,
+        "judgment_recall": 0.5047810031547284,
+        "false_merge_pairs": 3778,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 793,
+          "배우자": 2427,
+          "가족(다른 성)": 222,
+          "인척": 45,
+          "쌍둥이": 49,
+          "지인 대리예약": 138,
+          "번호 재할당(타인)": 101,
+          "무관한 사람": 3
+        },
+        "false_merged_records": 4553
+      },
+      "B5": {
+        "auto_recall": 0.5349357309056407,
+        "judgment_recall": 0.49653958083685895,
+        "false_merge_pairs": 1287,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 279,
+          "배우자": 728,
+          "가족(다른 성)": 57,
+          "인척": 21,
+          "쌍둥이": 11,
+          "지인 대리예약": 138,
+          "번호 재할당(타인)": 53
+        },
+        "false_merged_records": 1863
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    }
+  },
+  "foreign_high": {
+    "11": {
+      "records": 38101,
+      "persons": 20000,
+      "true_pairs": 43854,
+      "judgment_true_pairs": 40730,
+      "ci_record_share": 0.4701188945172043,
+      "method": {
+        "auto_recall": 0.2163998723035527,
+        "judgment_recall": 0.1562975693591947,
+        "false_merge_pairs": 2,
+        "false_merge_by_trap": {
+          "배우자": 1,
+          "가족(같은 성)": 1
+        },
+        "false_merged_records": 4,
+        "review_pairs": 15194,
+        "review_per_1000": 398.78218419464054,
+        "review_same_person_share": 0.9787416085296827,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6412185889542573,
+        "comparisons": 264396,
+        "capped_blocks": 0,
+        "seconds": 1.44
+      },
+      "B1": {
+        "auto_recall": 0.36835864459342366,
+        "judgment_recall": 0.3542106555364596,
+        "false_merge_pairs": 2721,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 415,
+          "배우자": 1908,
+          "인척": 18,
+          "지인 대리예약": 70,
+          "번호 재할당(타인)": 59,
+          "가족(다른 성)": 189,
+          "쌍둥이": 60,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 3665
+      },
+      "B3": {
+        "auto_recall": 0.5688876727322479,
+        "judgment_recall": 0.5540387920451756,
+        "false_merge_pairs": 4170,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 633,
+          "배우자": 2877,
+          "번호 재할당(타인)": 119,
+          "인척": 28,
+          "지인 대리예약": 157,
+          "가족(다른 성)": 262,
+          "쌍둥이": 89,
+          "무관한 사람": 5
+        },
+        "false_merged_records": 4934
+      },
+      "B4": {
+        "auto_recall": 0.609362885939709,
+        "judgment_recall": 0.5794009329732384,
+        "false_merge_pairs": 4477,
+        "false_merge_by_trap": {
+          "가족(같은 성)": 656,
+          "배우자": 3079,
+          "번호 재할당(타인)": 173,
+          "인척": 28,
+          "지인 대리예약": 163,
+          "가족(다른 성)": 282,
+          "쌍둥이": 91,
+          "무관한 사람": 5
+        },
+        "false_merged_records": 5091
+      },
+      "B5": {
+        "auto_recall": 0.5950426414922242,
+        "judgment_recall": 0.5639823226123251,
+        "false_merge_pairs": 1627,
+        "false_merge_by_trap": {
+          "배우자": 1119,
+          "번호 재할당(타인)": 64,
+          "가족(같은 성)": 169,
+          "지인 대리예약": 163,
+          "가족(다른 성)": 71,
+          "쌍둥이": 34,
+          "인척": 7
+        },
+        "false_merged_records": 2185
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "12": {
+      "records": 38312,
+      "persons": 20000,
+      "true_pairs": 44535,
+      "judgment_true_pairs": 41502,
+      "ci_record_share": 0.4656243474629359,
+      "method": {
+        "auto_recall": 0.2102391377568205,
+        "judgment_recall": 0.15252276998698858,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 15594,
+        "review_per_1000": 407.02651910628526,
+        "review_same_person_share": 0.9816596126715403,
+        "ci_conflict_to_review": 0,
+        "recall_upper_if_human_perfect": 0.6432468844728865,
+        "comparisons": 270122,
+        "capped_blocks": 0,
+        "seconds": 1.58
+      },
+      "B1": {
+        "auto_recall": 0.3712810149320759,
+        "judgment_recall": 0.35819960483832103,
+        "false_merge_pairs": 2567,
+        "false_merge_by_trap": {
+          "배우자": 1656,
+          "가족(같은 성)": 497,
+          "지인 대리예약": 69,
+          "쌍둥이": 85,
+          "가족(다른 성)": 177,
+          "인척": 24,
+          "번호 재할당(타인)": 59
+        },
+        "false_merged_records": 3539
+      },
+      "B3": {
+        "auto_recall": 0.5761984955652857,
+        "judgment_recall": 0.5632740590814901,
+        "false_merge_pairs": 3827,
+        "false_merge_by_trap": {
+          "배우자": 2420,
+          "가족(같은 성)": 744,
+          "지인 대리예약": 131,
+          "쌍둥이": 123,
+          "가족(다른 성)": 272,
+          "인척": 36,
+          "번호 재할당(타인)": 101
+        },
+        "false_merged_records": 4729
+      },
+      "B4": {
+        "auto_recall": 0.6170203210957673,
+        "judgment_recall": 0.5890318538865597,
+        "false_merge_pairs": 4013,
+        "false_merge_by_trap": {
+          "배우자": 2514,
+          "가족(같은 성)": 780,
+          "지인 대리예약": 133,
+          "쌍둥이": 128,
+          "가족(다른 성)": 283,
+          "인척": 39,
+          "번호 재할당(타인)": 136
+        },
+        "false_merged_records": 4852
+      },
+      "B5": {
+        "auto_recall": 0.6063320983496127,
+        "judgment_recall": 0.5775625271071274,
+        "false_merge_pairs": 1613,
+        "false_merge_by_trap": {
+          "지인 대리예약": 133,
+          "쌍둥이": 52,
+          "배우자": 966,
+          "가족(같은 성)": 273,
+          "가족(다른 성)": 110,
+          "번호 재할당(타인)": 61,
+          "인척": 18
+        },
+        "false_merged_records": 2248
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    },
+    "13": {
+      "records": 37532,
+      "persons": 20000,
+      "true_pairs": 41360,
+      "judgment_true_pairs": 38506,
+      "ci_record_share": 0.47023872961739316,
+      "method": {
+        "auto_recall": 0.2222678916827853,
+        "judgment_recall": 0.1646236950085701,
+        "false_merge_pairs": 0,
+        "false_merge_by_trap": {},
+        "false_merged_records": 0,
+        "review_pairs": 14698,
+        "review_per_1000": 391.6124906746243,
+        "review_same_person_share": 0.9747584705402096,
+        "ci_conflict_to_review": 1,
+        "recall_upper_if_human_perfect": 0.6491295938104449,
+        "comparisons": 257539,
+        "capped_blocks": 0,
+        "seconds": 1.25
+      },
+      "B1": {
+        "auto_recall": 0.38029497098646037,
+        "judgment_recall": 0.36633251960733393,
+        "false_merge_pairs": 2611,
+        "false_merge_by_trap": {
+          "배우자": 1869,
+          "가족(같은 성)": 397,
+          "가족(다른 성)": 170,
+          "지인 대리예약": 61,
+          "번호 재할당(타인)": 46,
+          "인척": 19,
+          "쌍둥이": 47,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 3582
+      },
+      "B3": {
+        "auto_recall": 0.5813104448742746,
+        "judgment_recall": 0.5679634342699839,
+        "false_merge_pairs": 3830,
+        "false_merge_by_trap": {
+          "배우자": 2607,
+          "가족(다른 성)": 274,
+          "인척": 40,
+          "쌍둥이": 70,
+          "가족(같은 성)": 634,
+          "지인 대리예약": 113,
+          "번호 재할당(타인)": 90,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 4776
+      },
+      "B4": {
+        "auto_recall": 0.6194390715667312,
+        "judgment_recall": 0.5912325351893212,
+        "false_merge_pairs": 4029,
+        "false_merge_by_trap": {
+          "배우자": 2722,
+          "가족(다른 성)": 305,
+          "인척": 41,
+          "쌍둥이": 72,
+          "가족(같은 성)": 671,
+          "지인 대리예약": 117,
+          "번호 재할당(타인)": 99,
+          "무관한 사람": 2
+        },
+        "false_merged_records": 4898
+      },
+      "B5": {
+        "auto_recall": 0.6081479690522243,
+        "judgment_recall": 0.5791045551342648,
+        "false_merge_pairs": 1624,
+        "false_merge_by_trap": {
+          "배우자": 1082,
+          "지인 대리예약": 117,
+          "가족(같은 성)": 232,
+          "가족(다른 성)": 96,
+          "번호 재할당(타인)": 44,
+          "인척": 25,
+          "쌍둥이": 28
+        },
+        "false_merged_records": 2242
+      },
+      "beats": {
+        "B1": false,
+        "B3": false,
+        "B4": false,
+        "B5": false
+      },
+      "false_le_B5": true
+    }
+  }
+}
