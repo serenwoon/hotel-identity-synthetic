@@ -1,0 +1,55 @@
+{
+  "title": "호텔 동일인 판정 합성 실측 v2 — 사전 등록부",
+  "registered": "2026-11-03",
+  "rule": "본 실행 전에 커밋한다. 본 실행 뒤에는 판정 규칙·문턱·통과 기준·시나리오를 고치지 않는다. 버그를 고치면 CHANGES.md에 적고 고치기 전 결과도 남긴다.",
+  "why_v2": "v1의 약점 두 가지 — (1) 생성기 비율을 판정기 작성자가 정했다 (2) 롯데호텔 리워즈는 본인인증으로 CI를 받는데 v1은 CI가 없는 세상을 가정했다. 근거는 볼트 노트 16 / README 참조.",
+  "generator": {
+    "file": "gen_v2/gen_v2.py",
+    "author": "판정 규칙을 보지 않은 별도 에이전트. 근거표와 입출력 형식만 받았다(er.py·registry.json·README·결과 폴더를 열지 말라는 지시). 지시로 막은 것이라 증명은 아니다",
+    "evidence": "gen_v2/GENERATOR.md에 매개변수마다 근거 번호 또는 '가정'",
+    "base_persons": 20000,
+    "notes": [
+      "생성기에서 base_persons는 가족·쌍둥이·동명이인을 포함한 전체 인원이다(v1은 기본 인원 + 함정 인원)",
+      "CI 없는 비율을 25/45/65%로 맞추려고, 생성기 작성자가 '오프라인 계정이 온라인 등록 때 CI를 받는다'고 가정했고 사람당 기록 수가 수준별로 달라진다(1.44/1.89/2.45)",
+      "links에는 v1 네 종류 말고도 가족(다른 성)·인척·지인 대리예약·번호 재할당(타인)이 있다. 우연히 생긴 동명이인·생일 같음 쌍도 링크로 남는다"
+    ]
+  },
+  "method_v2": {
+    "step0_ci": "두 기록이 모두 CI를 가지면 CI로 확정한다 — 같으면 합침, 다르면 따로 둠. 이 쌍에는 점수를 매기지 않는다",
+    "step1_rules": "나머지 쌍(CI 없는 기록이 하나라도 낀 쌍)은 v1 규칙 그대로(er.py의 정규화·다중 묶기·점수·문턱, 커밋 f4e6a9f와 같은 판정 코드)",
+    "cannot_link": "합칠 때 서로 다른 CI를 가진 군집을 잇게 되면 잇지 않고 사람 확인으로 보낸다",
+    "order": "CI 합침을 먼저 하고, 그다음 v1 합침 쌍을 점수 높은 순(같으면 rid 순)으로 처리"
+  },
+  "baselines": {
+    "B1": "원문 전화 또는 원문 이메일 일치(v1과 같음)",
+    "B3": "형식 맞춘 전화 또는 이메일 일치(v1과 같음, CI 안 씀)",
+    "B4": "CI가 같거나 형식 맞춘 전화·이메일이 같으면 합침(순진한 union)",
+    "B5": "B4와 같되 서로 다른 CI 군집은 잇지 않음(CI를 아는 상식 기준선, 가장 강함)"
+  },
+  "metrics": {
+    "auto_recall": "같은 사람 기록 쌍 중 같은 군집에 든 비율",
+    "judgment_recall": "CI 없는 기록이 하나라도 낀 같은 사람 쌍만 센 회수율 — CI끼리는 누구나 맞히므로 이쪽이 실력이다",
+    "false_merge_pairs": "같은 군집에 든 다른 사람 기록 쌍 수(함정 종류별로도)",
+    "review": "사람 확인 쌍 수(CI 충돌로 간 것 포함), 그중 같은 사람 비율, 기록 1,000건당, 사람이 다 맞게 처리했을 때 회수율 상한"
+  },
+  "scenarios": {
+    "base": {"seeds": [1, 2, 3, 4, 5], "scenario": {}},
+    "sensitivity_seeds": [11, 12, 13],
+    "sensitivity": {
+      "ci_less_low": {"ci_less_level": "low"},
+      "ci_less_high": {"ci_less_level": "high"},
+      "email_share_low": {"email_share_level": "low"},
+      "email_share_high": {"email_share_level": "high"},
+      "phone_change_low": {"phone_change": 0.05},
+      "phone_change_high": {"phone_change": 0.4},
+      "typo_stress": {"typo_level": "stress"},
+      "foreign_high": {"foreign_share": 0.15}
+    }
+  },
+  "pass_rule": {
+    "beats": "auto_recall이 기준선보다 높고 false_merge_pairs가 기준선 이하",
+    "verdict": "base 다섯 시드 모두에서 B4와 B5를 이기면 「통과」. 다섯 시드 모두 오병합은 B5 이하인데 회수율에서 지면 「부분 통과」. 그 밖은 「실패」",
+    "sensitivity": "민감도 시나리오는 판정을 바꾸지 않는다. 기준선과의 우열이 뒤집히는 시나리오를 그대로 보고한다"
+  },
+  "smoke": "생성기 점검(selfcheck)과 인원 300명 smoke 실행으로 돌아가는지만 본다. 판정 결과 숫자는 보지 않는다"
+}
