@@ -52,13 +52,21 @@ def make_phone(rng):
     return "010" + "".join(str(rng.randint(0, 9)) for _ in range(8))
 
 
+USED_EMAILS = set()  # 생성 한 번 안에서 이메일 주소는 한 사람만 쓴다(함정의 공유는 share()가 따로 복사)
+
+
 def make_email(rng, given_ko, sur_ko):
     sur = dict((s, v) for s, v, _ in SURNAMES)[sur_ko][0].lower()
     giv = "".join(GIVEN[g][0].lower() for g in given_ko)
     handle = rng.choice([f"{giv}{sur}", f"{giv}.{sur}", f"{sur}{giv}", f"{giv[:1]}{sur}"])
     if rng.random() < 0.7:
         handle += str(rng.randint(1, 9999))
-    return f"{handle}@{rng.choice(DOMAINS)}"
+    domain = rng.choice(DOMAINS)
+    email = f"{handle}@{domain}"
+    while email in USED_EMAILS:
+        email = f"{handle}{rng.randint(1, 99999)}@{domain}"
+    USED_EMAILS.add(email)
+    return email
 
 
 def make_dob(rng, year_lo=1950, year_hi=2005):
@@ -79,6 +87,7 @@ def new_person(rng, pid, surname=None, given=None, dob=None):
 
 def generate(seed, base_persons, reg):
     rng = random.Random(seed)
+    USED_EMAILS.clear()
     persons, links = [], []
     for i in range(base_persons):
         persons.append(new_person(rng, i))

@@ -1,0 +1,74 @@
+{
+  "records": 34100,
+  "persons": 22907,
+  "true_pairs": 13326,
+  "trap_pairs": {
+    "가족(같은 성)": 3457,
+    "쌍둥이": 266,
+    "배우자": 2235,
+    "동명이인·생일 같음": 460
+  },
+  "method": {
+    "auto_recall": 0.7005853219270599,
+    "auto_same_pairs": 9336,
+    "false_merge_pairs": 4,
+    "false_merge_by_trap": {
+      "쌍둥이": 3,
+      "동명이인·생일 같음": 1
+    },
+    "false_merged_records": 7,
+    "review_pairs": 4878,
+    "review_same_person": 3638,
+    "recall_upper_if_human_perfect": 0.9622542398319075,
+    "blocking_recall": 0.9934714092751014,
+    "blocking_missed_true_pairs": 87,
+    "comparisons": 112253,
+    "all_pairs": 581387950,
+    "comparison_ratio": 0.0001930776171057553,
+    "capped_blocks": 0,
+    "seconds": 1.77
+  },
+  "B1": {
+    "auto_recall": 0.5012757016358997,
+    "auto_same_pairs": 6680,
+    "false_merge_pairs": 8063,
+    "false_merge_by_trap": {
+      "무관한 사람": 6553,
+      "가족(같은 성)": 1087,
+      "배우자": 379,
+      "쌍둥이": 43,
+      "동명이인·생일 같음": 1
+    },
+    "false_merged_records": 3827
+  },
+  "B2": {
+    "auto_recall": 0.06528590724898695,
+    "auto_same_pairs": 870,
+    "false_merge_pairs": 41,
+    "false_merge_by_trap": {
+      "가족(같은 성)": 30,
+      "쌍둥이": 5,
+      "배우자": 5,
+      "무관한 사람": 1
+    },
+    "false_merged_records": 78
+  },
+  "B3": {
+    "auto_recall": 0.8718295062284256,
+    "auto_same_pairs": 11618,
+    "false_merge_pairs": 16832,
+    "false_merge_by_trap": {
+      "무관한 사람": 14212,
+      "배우자": 691,
+      "가족(같은 성)": 1842,
+      "쌍둥이": 86,
+      "동명이인·생일 같음": 1
+    },
+    "false_merged_records": 5620
+  },
+  "beats": {
+    "B1": true,
+    "B2": true,
+    "B3": false
+  }
+}

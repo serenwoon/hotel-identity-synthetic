@@ -1,0 +1,32 @@
+{
+  "verdict": "부분 통과",
+  "beats_B1_all_seeds": true,
+  "beats_B3_all_seeds": false,
+  "per_seed_beats": {
+    "1": {
+      "B1": true,
+      "B2": true,
+      "B3": false
+    },
+    "2": {
+      "B1": true,
+      "B2": true,
+      "B3": false
+    },
+    "3": {
+      "B1": true,
+      "B2": true,
+      "B3": false
+    },
+    "4": {
+      "B1": true,
+      "B2": true,
+      "B3": false
+    },
+    "5": {
+      "B1": true,
+      "B2": true,
+      "B3": false
+    }
+  }
+}

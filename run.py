@@ -13,7 +13,7 @@ import er  # noqa: E402
 
 reg = json.loads((HERE / "registry.json").read_text(encoding="utf-8"))
 mode = sys.argv[1] if len(sys.argv) > 1 else "smoke"
-out_dir = HERE / "out"
+out_dir = HERE / (sys.argv[2] if len(sys.argv) > 2 else "out")
 out_dir.mkdir(exist_ok=True)
 
 if mode == "smoke":
