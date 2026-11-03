@@ -120,7 +120,7 @@ TYPO_BASE = {
     "foreign_member": {"name_ko": 0.0, "name_en": 0.02, "phone": 0.01, "email": 0.01, "dob": 0.01},
 }
 STRESS_RATE = 0.10            # 근거10
-MAX_CORRUPT_PER_RECORD = 2    # 근거10(GeCo 관행)
+MAX_CORRUPT_FIELDS_IN_RECORD = 2    # 근거10(GeCo 관행)
 P_EMAIL_CASE_VARIANT = 0.04   # 가정: 직접 친 이메일의 대소문자 변형
 P_EN_DEVIATION = 0.06         # 근거5: 본인 철자를 대체로 재사용, 가끔 한 음절·띄어쓰기가 바뀜
 
@@ -1512,7 +1512,7 @@ class _Gen:
         rng.shuffle(order)
         n = 0
         for a in order:
-            if n >= MAX_CORRUPT_PER_RECORD:
+            if n >= MAX_CORRUPT_FIELDS_IN_RECORD:
                 break
             v = r[a]
             if v and v != "1900-01-01" and rng.random() < rates[a]:

@@ -1,0 +1,7 @@
+{
+  "verdict": "부분 통과",
+  "status": "탐색",
+  "beats_B4_all": false,
+  "beats_B5_all": false,
+  "false_le_B5_all": true
+}
