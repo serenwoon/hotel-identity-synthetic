@@ -1,0 +1,78 @@
+{
+  "title": "호텔 동일인 판정 합성 사전 실측 — 사전 등록부",
+  "registered": "2026-11-03",
+  "rule": "이 파일은 본 실행 전에 커밋한다. 본 실행 뒤에는 문턱·점수·통과 기준을 고치지 않는다. 버그를 고치면 CHANGES.md에 적고 다시 돌린 결과를 모두 남긴다.",
+  "question": "다중 묶기 + 근거 점수 + 세 구간 판정이, 상식 기준선보다 심어 둔 중복을 더 많이 자동으로 합치면서 잘못 합친 쌍은 늘리지 않는가",
+  "honesty": [
+    "생성기와 판정기를 같은 사람이 만들었다. 표기 변형 비율과 함정 비율은 내가 정한 값이고 실제 롯데호텔 데이터의 비율은 모른다. 결과는 이 가정 아래의 숫자다",
+    "LLM은 쓰지 않는다. 메모 읽기는 이 실측에 없다",
+    "사람 확인 대기열의 처리는 시뮬레이션하지 않는다. '대기열을 사람이 모두 맞게 처리했을 때'는 상한으로만 따로 적는다",
+    "주소 유사도는 넣지 않았다(초안에는 있음)"
+  ],
+  "data": {
+    "base_persons": 20000,
+    "seeds_main": [1, 2, 3, 4, 5],
+    "seed_smoke": 99,
+    "smoke_note": "smoke 실행(인원 300)은 돌아가는지만 본다. 숫자는 보고에 쓰지 않는다",
+    "records_per_person": {"1": 0.6, "2": 0.3, "3": 0.1},
+    "sources": ["hotel_rewards", "resort_member", "legacy_property"],
+    "surname": "한 글자 성 20개, 실제 빈도에 가까운 가중치",
+    "name_form": {"korean": 0.55, "english": 0.45},
+    "english_format": {"order_surname_first": 0.5, "given_joined": 0.4, "given_hyphen": 0.3, "given_space": 0.3, "upper_case": 0.3},
+    "romanization": "음절마다 실제로 쓰이는 표기 변형 목록에서 고른다(첫 표기 65%, 나머지가 35%를 나눔)",
+    "name_typo": 0.04,
+    "phone": {"changed_from_second_record": 0.2, "missing": 0.08, "formats": ["010-1234-5678", "01012345678", "+82 10-1234-5678", "010 1234 5678"]},
+    "email": {"changed_from_second_record": 0.2, "missing": 0.12, "case_variant": 0.2},
+    "dob": {"missing": 0.08, "typo": 0.02},
+    "traps_must_not_merge": {
+      "family_same_surname": {"rate": 0.08, "dob_gap_years": [25, 35], "share_email": 0.6, "share_phone": 0.15},
+      "spouse": {"rate": 0.05, "dob_gap_years": [0, 5], "share_email": 0.3, "share_phone": 0.1},
+      "twin": {"rate": 0.005, "same_dob": true, "same_first_given_syllable": 0.5, "share_email": 0.4, "share_phone": 0.2},
+      "same_name_same_dob": {"rate": 0.01, "share_email": 0.0, "share_phone": 0.0}
+    }
+  },
+  "method": {
+    "normalize": {
+      "phone": "숫자만 남기고 82로 시작하면 0으로 바꿈",
+      "email": "소문자, 앞뒤 공백 제거",
+      "name": "한글은 국어의 로마자 표기법(음절 단위, 동화 무시)으로 바꾼 뒤, 영문과 같은 표기 열쇠 규칙(rh→r, sh→s, ch→j, ee→i, oo·ou·eo→u, oe→oi, 모음 뒤 h 삭제, g→k b→p d→t r→l, 첫 l 뒤 i·y면 l 삭제, 같은 글자 반복 줄임)을 적용. 영문은 순서를 모르므로 원래 순서·마지막 토큰을 앞으로·첫 토큰을 뒤로 세 가지를 만들고 가장 높은 Jaro-Winkler 유사도를 씀"
+    },
+    "blocking": {
+      "keys": ["생년월일", "정규화 이메일", "정규화 전화번호", "이름 표기 열쇠(후보마다)"],
+      "rule": "키마다 따로 묶고, 어느 한 묶음에서라도 만난 쌍만 비교",
+      "block_cap": 500,
+      "block_cap_note": "500건 넘는 묶음은 비교하지 않고 수를 센다"
+    },
+    "score": {
+      "dob": {"both_equal": 3, "both_present_differ": -4, "else": 0},
+      "email": {"both_equal": 3, "else": 0},
+      "phone": {"both_equal": 3, "else": 0},
+      "name": {"sim_ge_0.95": 3, "sim_0.88_to_0.95": 1, "sim_lt_0.88": -2}
+    },
+    "decision": {
+      "merge": "점수 7 이상 AND 이름 유사도 0.95 이상 AND 생년월일 충돌 없음",
+      "review": "합침이 아니고 점수 4 이상",
+      "separate": "그 밖",
+      "closure": "합침 쌍을 union-find로 묶어 군집을 만든다(사슬로 생기는 오병합도 센다)"
+    }
+  },
+  "baselines": {
+    "B1_raw_exact_or": "원문 전화번호가 같거나 원문 이메일이 같으면 합침(초안에 적은 기준선)",
+    "B2_raw_exact_and": "원문 전화번호와 원문 이메일이 둘 다 같을 때만 합침",
+    "B3_normalized_or": "정규화한 전화번호나 이메일이 같으면 합침(형식만 맞춘 상식 기준선, 더 강함)"
+  },
+  "metrics": {
+    "auto_recall": "같은 사람 레코드 쌍 중 같은 군집에 든 비율(군집 기준)",
+    "false_merge_pairs": "같은 군집에 든 다른 사람 레코드 쌍 수",
+    "false_merge_by_trap": "오병합 쌍을 함정 종류별로",
+    "review_queue": "사람 확인 쌍 수, 그중 같은 사람 비율",
+    "recall_upper_if_human_perfect": "합침 + 대기열의 같은 사람 쌍만 받아들였을 때의 군집 회수율(상한)",
+    "blocking_recall": "같은 사람 쌍 중 어느 묶음에서라도 만난 비율, 놓친 수",
+    "comparisons": "비교한 쌍 수와 전체 쌍 대비 비율, 실행 시간"
+  },
+  "pass_rule": {
+    "vs_baseline": "auto_recall이 기준선보다 높고 false_merge_pairs가 기준선 이하이면 그 기준선을 이긴 것",
+    "verdict": "다섯 시드 모두에서 B1과 B3를 둘 다 이기면 「통과」, B1만 이기면 「부분 통과」, B1을 못 이기면 「실패」",
+    "secondary": "B3에 회수율로 지더라도 recall_upper와 오병합 수는 따로 보고한다(판정을 바꾸지 않음)"
+  }
+}
